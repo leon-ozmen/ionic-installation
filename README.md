@@ -74,7 +74,7 @@
 <a><em class="fas fa-chevron-circle-down"></em>&nbsp;&nbsp;Cliquez pour agrandir</a>    
 </summary>
 	
-### A faire pour chaque application
+### A faire pour chaque application après avoir fait [la première partie des étapes pour le lancer sur Android](#lancer-son-appli-web-sur-t%C3%A9l%C3%A9phone)
 - Modifier le contenu du fichier nomApplication\resources\android\xml\network_security_config.xml en ajoutant la ligne contenant l'adresse IP (remplacer 192.168.1.30 par l'adresse IP de votre ordinateur)
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -103,7 +103,7 @@
 
 </details>
 
-## Start App on local computer browser
+## Lancer son appli sur le navigateur de l'ordinateur
 - Ouvrir le cmd en Administrateur
 - Se déplacer dans le projet avec la commande
 	> cd nomApplication
