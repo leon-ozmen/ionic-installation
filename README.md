@@ -54,8 +54,6 @@
 
 - Ajouter le chemin suivant dans la variable PATH
 	> C:\Gradle\gradle-6.3\bin 
-- Si le chemin de votre projet contient des caractères non ASCII il faut ajouter la ligne suivante dans votre fichier gradle.properties situé dans nomApplication\platforms\android\gradle.properties
-	> android.overridePathCheck=true
 
 ##### #Ajout des prérequis npm
 - Lancer les commandes suivantes pour installer les dépendances :
@@ -100,6 +98,8 @@
             <application android:networkSecurityConfig="@xml/network_security_config" />
     </edit-config>
 ```
+- Si le chemin de votre projet contient des caractères non ASCII il faut ajouter la ligne suivante dans votre fichier gradle.properties situé dans nomApplication\platforms\android\gradle.properties
+	> android.overridePathCheck=true
 
 </details>
 
