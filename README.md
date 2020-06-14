@@ -122,6 +122,7 @@
  ionic cordova resources android --force
  ionic cordova prepare android
 ```
+##### A partir d'ici vous pouvez configurer réaliser [les étapes pour l'appli à distance(Option 2)](#option-2-configuration-pour-lancer-lappli-sur-t%C3%A9l%C3%A9phone-depuis-le-r%C3%A9seau-local-)
 - Connecter son téléphone android en USB à son ordinateur 
 -- N'oubliez pas d'activer : Déboguage USB sur votre téléphone
 ### Lancer son appli web sur téléphone branché en USB
