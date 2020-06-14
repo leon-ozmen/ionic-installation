@@ -14,8 +14,12 @@
 - Créer l'application en lançant la commande suivante dans le cmd
 	> ionic start --type=angular nomApplication blank
 - Répondre N lorsque le terminal demande d'installer le Capacitor ( si vous l'installer cela prend beaucoup de temps)
-
+	
 # (Option 1) Configuration pour l'application sur android
+<details>
+<summary>
+<a><em class="fas fa-chevron-circle-down"></em>&nbsp;&nbsp;Cliquez pour agrandir</a>    
+</summary>
 
 - Installer JAVA JDK 8
 	- Ajouter le chemin C:\Program Files\Java\jdk1.8.0_241\bin au variable d'environnement PATH
@@ -61,7 +65,15 @@
  npm i @babel/compat-data@7.8.0
 ```
 - Fermer le CMD (important) puis le relancer si vous faîtes les étapes suivantes
+
+</details>
+
 # (Option 2) Configuration pour lancer l'appli sur téléphone depuis le réseau local :
+<details>
+<summary>
+<a><em class="fas fa-chevron-circle-down"></em>&nbsp;&nbsp;Cliquez pour agrandir</a>    
+</summary>
+	
 ### A faire pour chaque application
 - Modifier le contenu du fichier nomApplication\resources\android\xml\network_security_config.xml en ajoutant la ligne contenant l'adresse IP (remplacer 192.168.1.30 par l'adresse IP de votre ordinateur)
 ```
@@ -89,7 +101,7 @@
     </edit-config>
 ```
 
-
+</details>
 
 ## Start App on local computer browser
 - Ouvrir le cmd en Administrateur
