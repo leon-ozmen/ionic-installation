@@ -99,7 +99,7 @@
 	> ionic serve
 
 ## Lancer son appli web sur téléphone
-#### Nécessite la réalisation de Option 1
+#### Nécessite la réalisation de [Option 1](#option-1-configuration-pour-lapplication-sur-android)
 - Ouvrir le cmd en Administrateur
 - Se déplacer dans le projet avec la commande
 	> cd nomApplication
@@ -119,7 +119,7 @@
 	> ionic cordova run android -l
 	
 ### Lancer son appli web sur téléphone à distance
-#### Nécessite la réalisation de Option 1 + Option 2
+#### Nécessite la réalisation de [Option 1](#option-1-configuration-pour-lapplication-sur-android) + [Option 2](#option-2-configuration-pour-lancer-lappli-sur-t%C3%A9l%C3%A9phone-depuis-le-r%C3%A9seau-local-)
 - Le téléphone doit être branché lors de l’exécution de la commande.
 - Lancer en déploiement continu en reseau local (débranché)
 	> ionic cordova run android -l --host=x.x.x.x (x.x.x.x = adresse ip de ton pc)
