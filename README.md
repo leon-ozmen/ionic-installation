@@ -136,3 +136,16 @@
 - Le téléphone doit être branché lors de l’exécution de la commande.
 - Lancer en déploiement continu en reseau local (débranché)
 	> ionic cordova run android -l --host=x.x.x.x (x.x.x.x = adresse ip de ton pc)
+- Après que l'application s'ouvre sur téléphone vous pouvez arrêter le serveur lancé sur le cmd en faisant Ctrl + C et en confirmant avec O quand vous avez fini de l'utiliser
+- L'application ne fonctionnera plus à partir du moment où vous arrêter le serveur pour le rendre fonctionnel à nouveau il faudra lancer la commande 
+```
+ionic serve --external sur le cmd 
+```
+- Lorsque l'on doit utiliser 
+```
+ionic cordova run browser 
+```
+il faut lancer l'application en précisant le port 8000 avec la commande 
+```
+ionic cordova run android -l --host=x.x.x.x --port=8000
+```
