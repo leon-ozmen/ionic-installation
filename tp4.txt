@@ -1,0 +1,63 @@
+#INSTALLATION PLUGINS
+
+-- Plugin camera
+ionic cordova plugin add cordova-plugin-camera
+npm install @ionic-native/camera
+
+-- Plugin geoloc
+ionic cordova plugin add cordova-plugin-geolocation
+npm install @ionic-native/geolocation
+
+-- hammerjs longpress event
+npm install hammerjs -save
+
+-- Plugin email-composer
+ionic cordova plugin add cordova-plugin-email-composer
+npm install @ionic-native/email-composer
+
+-- Plugin google map
+ionic cordova plugin add cordova-plugin-googlemaps
+npm install --save @ionic-native/core@latest @ionic-native/google-maps@latest
+
+/* PAS BESOIN
+--Plugin file
+ionic cordova plugin add cordova-plugin-file
+npm install @ionic-native/file
+*/
+
+-- CONFIG
+
+--> app.module.ts
+
+import { Camera } from '@ionic-native/camera/ngx';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
+import { EmailComposer } from '@ionic-native/email-composer/ngx';
+
+@NgModule({
+  declarations: [AppComponent],
+  entryComponents: [],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HammerModule],
+  providers: [
+    StatusBar,
+    SplashScreen,
+    Camera,
+    Geolocation,
+    DataProviderService,
+    EmailComposer,
+
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+
+
+--> src/main.ts
+
+import 'hammerjs'; // HAMMER TIME 
+
+--> config.xml 
+
+    <preference name="GOOGLE_MAPS_ANDROID_API_KEY" value="AIXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXg" />
+    <preference name="GOOGLE_MAPS_IOS_API_KEY" value="AIXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXg" />
+--------------------------
+Service et composant
+
+ionic generate service dataProvider
+ionic generate component photoCard
